@@ -1,0 +1,16 @@
+{
+  "en": [
+    { "label": "Registration", "url": "/en/prijava/" },
+    { "label": "Organizer", "url": "/en/organizing-committee/" },
+    { "label": "Support", "url": "/en/support/" },
+    { "label": "Places to eat", "url": "/en/places-to-eat/" },
+    { "label": "2021 resources", "url": "/en/agenda/" }
+  ],
+  "sl": [
+    { "label": "Prijava", "url": "/prijava/" },
+    { "label": "Organizator", "url": "/organizacijski-odbor/" },
+    { "label": "Podporniki", "url": "/sponzorji/" },
+    { "label": "Hrana in pijača", "url": "/hrana-in-pijaca/" },
+    { "label": "Gradiva 2021", "url": "/agenda/" }
+  ]
+}

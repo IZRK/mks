@@ -1,0 +1,154 @@
+---
+layout: layouts/base.njk
+---
+{% from "partials/icons.njk" import arrow, pin, calendar %}
+{% set currentLang = schoolPage.lang %}
+{% set copy = locales[currentLang] %}
+{% set links = homeLinks[currentLang] %}
+
+{% if schoolPage.isHome %}
+  <section class="hero">
+    <div class="hero-lines" aria-hidden="true"></div>
+    <div class="hero-cave" aria-hidden="true">
+      <svg viewBox="0 0 720 520" preserveAspectRatio="xMidYMid slice">
+        <path d="M0 64c93 35 131-9 222 6 95 16 125 61 236 51 104-10 155-52 262-18V0H0Z" fill="currentColor" opacity=".14"/>
+        <path d="M0 136c101 21 160-34 257-8 88 24 129 70 231 44 95-24 150-35 232-7" fill="none" stroke="currentColor" stroke-width="2" opacity=".22"/>
+        <path d="M0 204c92 19 152-16 236 2 93 20 148 85 252 54 100-30 152-38 232-17" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".16"/>
+        <path d="M0 520V330c80-27 123 23 194 8 70-15 80-70 149-57 77 14 86 102 168 105 81 2 120-74 209-36v170Z" fill="currentColor" opacity=".1"/>
+        <path d="M297 170c41 15 78 28 94 63 15 33-3 60-35 68-37 9-62-15-58-48 3-30 27-41 48-28 17 10 16 30 2 39" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" opacity=".4"/>
+      </svg>
+    </div>
+    <div class="hero-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span>{{ copy.edition }}</span> · {{ copy.heroKicker }}</p>
+        <h1>{{ copy.topic }}</h1>
+        <p class="hero-lede">{{ copy.tagline }}</p>
+        <div class="hero-meta">
+          <span>{{ calendar() }} {{ site.dates[currentLang] }}</span>
+          <span>{{ pin() }} {{ copy.location }}</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-light" href="#updates">{{ copy.updates }} {{ arrow() }}</a>
+          <a class="text-link text-link-light" href="{{ links.topic }}">{{ copy.aboutSchool }} {{ arrow() }}</a>
+        </div>
+      </div>
+
+      <div class="hero-index" role="img" aria-label="{{ copy.edition }}">
+        <span>{{ site.edition }}</span><sup>{% if currentLang == 'en' %}TH{% else %}.{% endif %}</sup>
+        <small>{{ copy.edition }}</small>
+      </div>
+    </div>
+
+    <div class="hero-status"><i aria-hidden="true"></i>{{ copy.status }}</div>
+  </section>
+
+  <section class="document-band" id="updates">
+    <div class="section-shell document-grid">
+      <div>
+        <p class="eyebrow">{{ copy.materialsKicker }}</p>
+        <h2>{{ copy.materialsTitle }}</h2>
+        <p class="document-intro">{{ copy.materialsIntro }}</p>
+      </div>
+      <article class="document-placeholder">
+        <span>01</span>
+        <strong>{{ copy.firstCircular }}</strong>
+        <small><i aria-hidden="true"></i>{{ copy.pending }}</small>
+      </article>
+      <article class="document-placeholder">
+        <span>02</span>
+        <strong>{{ copy.secondCircular }}</strong>
+        <small><i aria-hidden="true"></i>{{ copy.pending }}</small>
+      </article>
+    </div>
+  </section>
+
+  <section class="home-intro section-shell">
+    <div class="section-heading">
+      <p class="eyebrow eyebrow-dark">{{ copy.aboutKicker }}</p>
+      <h2>{{ copy.aboutTitle }}</h2>
+    </div>
+    <div class="home-intro-copy prose prose-intro">
+      {{ content | safe }}
+    </div>
+    <dl class="fact-strip">
+      <div><dt>1993</dt><dd>{{ copy.since }}</dd></div>
+      <div><dt>{{ site.edition }}</dt><dd>{{ copy.editionLabel }}</dd></div>
+      <div><dt>SI</dt><dd>Postojna</dd></div>
+    </dl>
+  </section>
+
+  <section class="format-section">
+    <div class="section-shell">
+      <div class="section-topline section-topline-wide">
+        <div>
+          <p class="eyebrow eyebrow-dark">{{ copy.formatKicker }}</p>
+          <h2>{{ copy.formatTitle }}</h2>
+        </div>
+        <p>{{ copy.formatIntro }}</p>
+      </div>
+      <ol class="format-grid">
+        {% for item in schoolFormat[currentLang] %}
+          <li>
+            <span>{{ item.number }}</span>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.detail }}</p>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <section class="explore-section section-shell">
+    <div class="section-topline section-topline-wide">
+      <h2>{{ copy.explore }}</h2>
+      <p>{{ copy.exploreIntro }}</p>
+    </div>
+    <div class="explore-grid">
+      {% for item in sectionCards[currentLang] %}
+        <a href="{{ item.url }}" class="explore-card">
+          <span>{{ item.number }}</span>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text }}</p>
+          <i>{{ arrow() }}</i>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+{% else %}
+  <header class="page-hero {% if schoolPage.isLegacy %}page-hero-legacy{% endif %}">
+    <div class="page-hero-lines" aria-hidden="true"></div>
+    <div class="page-hero-shell">
+      <a class="breadcrumb" href="{{ links.home }}">{{ arrow() }} {{ copy.backHome }}</a>
+      <div class="page-title-row">
+        <div>
+          <p class="eyebrow">{% if schoolPage.isLegacy %}{{ copy.legacy }}{% elif schoolPage.key == 'archive' %}{{ copy.archiveEyebrow }}{% else %}{{ copy.school }} · {{ copy.edition }}{% endif %}</p>
+          <h1>{{ schoolPage.title | safe }}</h1>
+        </div>
+        <div class="page-number" aria-hidden="true">{{ schoolPage.displayNumber }}</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-shell">
+    <aside class="section-nav" aria-label="{{ copy.pageNavigation }}">
+      <p>{{ copy.pageNavigation }}</p>
+      <ul>
+        {% for item in navigation[currentLang] %}
+          <li><a href="{{ item.url }}"{% if schoolPage.key == item.key %} aria-current="page"{% endif %}>{{ item.label }} <span>{{ arrow() }}</span></a></li>
+        {% endfor %}
+      </ul>
+    </aside>
+
+    <article class="page-article">
+      {% if schoolPage.isLegacy %}
+        <div class="legacy-note">
+          <strong>{{ copy.legacy }}</strong>
+          <p>{{ copy.legacyIntro }}</p>
+        </div>
+      {% endif %}
+      <div class="prose">
+        {{ content | safe }}
+      </div>
+    </article>
+  </div>
+{% endif %}

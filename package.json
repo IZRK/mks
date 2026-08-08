@@ -1,0 +1,20 @@
+{
+  "name": "international-karst-school",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bilingual Eleventy site for the International Karstological School Classical Karst.",
+  "scripts": {
+    "build": "node scripts/clean-site.mjs && eleventy && node scripts/restore-public-media.mjs",
+    "start": "node scripts/clean-site.mjs && node scripts/restore-public-media.mjs && eleventy --serve",
+    "check": "node scripts/check-site.mjs && node scripts/check-compatibility.mjs",
+    "test": "npm run build && npm run check"
+  },
+  "engines": {
+    "node": ">=20.18.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.6",
+    "cheerio": "1.2.0"
+  }
+}

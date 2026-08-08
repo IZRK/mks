@@ -1,0 +1,18 @@
+{
+  "en": [
+    { "key": "topic", "label": "About", "url": "/en/topic-and-objectives/" },
+    { "key": "programme", "label": "Programme", "url": "/en/programme-outline/" },
+    { "key": "venue", "label": "Venue", "url": "/en/lokacija-dogodka/" },
+    { "key": "accommodation", "label": "Stay", "url": "/en/moznosti-nastanitve/" },
+    { "key": "info", "label": "Info", "url": "/en/technical-information/" },
+    { "key": "archive", "label": "Archive", "url": "/en/archive/" }
+  ],
+  "sl": [
+    { "key": "topic", "label": "O šoli", "url": "/nameni-in-cilji/" },
+    { "key": "programme", "label": "Program", "url": "/okviren-program/" },
+    { "key": "venue", "label": "Lokacija", "url": "/lokacija-dogodka/" },
+    { "key": "accommodation", "label": "Nastanitev", "url": "/moznosti-nastanitve/" },
+    { "key": "info", "label": "Informacije", "url": "/tehnicne-informacije/" },
+    { "key": "archive", "label": "Arhiv", "url": "/arhiv/" }
+  ]
+}

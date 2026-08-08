@@ -1,0 +1,114 @@
+{% set currentLang = lang or schoolPage.lang or "sl" %}
+{% set copy = locales[currentLang] %}
+{% set currentNav = navigation[currentLang] %}
+{% set currentHome = homeLinks[currentLang].home %}
+{% set canonicalUrl = build.siteUrl + schoolPage.route %}
+{% set slRoute = schoolPage.route if currentLang == "sl" else schoolPage.translationRoute %}
+{% set enRoute = schoolPage.route if currentLang == "en" else schoolPage.translationRoute %}
+<!DOCTYPE html>
+<html lang="{{ currentLang }}" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a3438">
+  <meta name="description" content="{{ description or copy.tagline }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title }} · {{ copy.shortSchool }}">
+  <meta property="og:description" content="{{ description or copy.tagline }}">
+  <meta property="og:image" content="{{ build.siteUrl }}/assets/images/planinska-jama.jpg">
+  <link rel="canonical" href="{{ canonicalUrl }}">
+  <link rel="alternate" hreflang="sl" href="{{ build.siteUrl + slRoute }}">
+  <link rel="alternate" hreflang="en" href="{{ build.siteUrl + enRoute }}">
+  <link rel="alternate" hreflang="x-default" href="{{ build.siteUrl + slRoute }}">
+  {% if schoolPage.isHome %}<link rel="preload" href="/assets/images/planinska-jama.webp" as="image" type="image/webp" fetchpriority="high">{% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..600&amp;family=Newsreader:opsz,wght@6..72,400..700&amp;display=swap" rel="stylesheet">
+  <title>{% if schoolPage.isHome %}{{ copy.topic }}{% else %}{{ title }}{% endif %} · {{ copy.shortSchool }}</title>
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script>document.documentElement.classList.remove('no-js');</script>
+</head>
+<body class="{% if schoolPage.isHome %}is-home{% endif %} {% if schoolPage.isLegacy %}is-legacy{% endif %}">
+  <a class="skip-link" href="#main-content">{{ copy.skip }}</a>
+
+  <header class="site-header" data-header>
+    <div class="header-shell">
+      <a class="brand" href="{{ currentHome }}">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M7 13c6-7 27-10 34 1M5 22c9-5 29-6 38 2M7 31c10-3 25-2 34 4M14 7c-3 10-2 23 4 34M28 5c-5 11-5 25 0 38" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"/><circle cx="24" cy="24" r="3.2" fill="currentColor"/></svg>
+        </span>
+        <span class="brand-copy"><strong>{{ copy.shortSchool }}</strong><small>{{ copy.edition }}</small></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+        <span>{{ copy.menu }}</span><i aria-hidden="true"></i>
+      </button>
+
+      <div class="menu-panel" id="site-menu" data-menu-panel>
+        <nav class="main-nav" aria-label="{{ copy.mainNavigation }}">
+          <ul>
+            {% for item in currentNav %}
+              <li><a href="{{ item.url }}"{% if navKey == item.key %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+        <a class="language-switch" href="{{ translationUrl }}" hreflang="{% if currentLang == 'en' %}sl{% else %}en{% endif %}">
+          <span>{{ copy.otherLanguage }}</span>
+          <strong>{% if currentLang == 'en' %}SI{% else %}EN{% endif %}</strong>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-intro">
+        <span class="footer-kicker">{{ copy.organizedBy }}</span>
+        <h2>{% if currentLang == 'en' %}Karst Research Institute ZRC SAZU{% else %}Inštitut za raziskovanje krasa ZRC SAZU{% endif %}</h2>
+        <p>Titov trg 2 · SI-6230 Postojna · {% if currentLang == 'en' %}Slovenia{% else %}Slovenija{% endif %}</p>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </div>
+
+      <div class="footer-links">
+        <span class="footer-kicker">{{ copy.explore }}</span>
+        <ul>
+          {% for item in footerNavigation[currentLang] %}
+            <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="footer-date" role="img" aria-label="{{ copy.edition }}">
+        <span>{{ site.edition }}</span>
+        <small>{{ copy.edition }}</small>
+      </div>
+    </div>
+
+    <div class="partner-section">
+      <p class="footer-kicker">{{ copy.partners }}</p>
+      <div class="partner-grid">
+        <img src="/assets/images/partners/zrc-sazu.png" alt="ZRC SAZU" loading="lazy">
+        <img src="/assets/images/partners/karst-research-institute.png" alt="{% if currentLang == 'en' %}Karst Research Institute, Postojna{% else %}Inštitut za raziskovanje krasa, Postojna{% endif %}" loading="lazy">
+        <img src="/assets/images/partners/uis.png" alt="{% if currentLang == 'en' %}International Union of Speleology{% else %}Mednarodna speleološka zveza{% endif %}" loading="lazy">
+        <img src="/assets/images/partners/speleological-association.png" alt="{% if currentLang == 'en' %}Speleological Association of Slovenia{% else %}Jamarska zveza Slovenije{% endif %}" loading="lazy">
+        <img src="/assets/images/partners/igu.png" alt="{% if currentLang == 'en' %}International Geographical Union{% else %}Mednarodna geografska zveza{% endif %}" loading="lazy">
+        <img src="/assets/images/partners/unesco-slovenia.png" alt="{% if currentLang == 'en' %}Slovenian National Commission for UNESCO{% else %}Slovenska nacionalna komisija za UNESCO{% endif %}" loading="lazy">
+        <img src="/assets/images/partners/unesco-chair.png" alt="{% if currentLang == 'en' %}UNESCO Chair{% else %}Unescova katedra{% endif %}" loading="lazy">
+        <img src="/assets/images/partners/karst-education-chair.png" alt="{% if currentLang == 'en' %}UNESCO Chair on Karst Education{% else %}Unescova katedra za izobraževanje o krasu{% endif %}" loading="lazy">
+      </div>
+    </div>
+
+    <div class="footer-base">
+      <p>© {{ '' | year }} {{ copy.rights }}</p>
+      <p><a href="{{ site.instituteUrl[currentLang] }}" target="_blank" rel="noopener">{% if currentLang == 'en' %}Karst Research Institute ZRC SAZU{% else %}Inštitut za raziskovanje krasa ZRC SAZU{% endif %}</a></p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js" type="module"></script>
+</body>
+</html>

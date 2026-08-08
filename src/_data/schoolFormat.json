@@ -1,0 +1,12 @@
+{
+  "en": [
+    { "number": "01", "title": "Lectures", "detail": "Invited and contributed research from across karst science." },
+    { "number": "02", "title": "Exchange", "detail": "Posters, discussion and connections across generations and disciplines." },
+    { "number": "03", "title": "Fieldwork", "detail": "Afternoon and full-day excursions through Classical Karst." }
+  ],
+  "sl": [
+    { "number": "01", "title": "Predavanja", "detail": "Vabljene in prijavljene predstavitve z različnih področij krasoslovja." },
+    { "number": "02", "title": "Izmenjava", "detail": "Plakati, razprave ter povezovanje generacij in raziskovalnih področij." },
+    { "number": "03", "title": "Terensko delo", "detail": "Popoldanske in celodnevne ekskurzije po Klasičnem krasu." }
+  ]
+}

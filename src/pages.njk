@@ -1,0 +1,15 @@
+---
+pagination:
+  data: pages
+  size: 1
+  alias: schoolPage
+permalink: "{{ schoolPage.route }}"
+layout: layouts/page.njk
+eleventyComputed:
+  title: "{{ schoolPage.title }}"
+  description: "{{ schoolPage.excerpt }}"
+  lang: "{{ schoolPage.lang }}"
+  translationUrl: "{{ schoolPage.translationRoute }}"
+  navKey: "{{ schoolPage.key }}"
+---
+{{ schoolPage.content | safe }}

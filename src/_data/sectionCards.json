@@ -1,0 +1,18 @@
+{
+  "en": [
+    { "number": "01", "title": "About the school", "text": "The purpose, tradition and field-based format of IKS Classical Karst.", "url": "/en/topic-and-objectives/" },
+    { "number": "02", "title": "Programme", "text": "Lectures, posters, field excursions and social events across the school week.", "url": "/en/programme-outline/" },
+    { "number": "03", "title": "Venues", "text": "The Karst Research Institute and Postojna Cultural Centre.", "url": "/en/lokacija-dogodka/" },
+    { "number": "04", "title": "Plan your stay", "text": "Hotels, private rooms and camps in and around Postojna.", "url": "/en/moznosti-nastanitve/" },
+    { "number": "05", "title": "Practical info", "text": "Dates, fees, abstract and presentation guidance for participants.", "url": "/en/technical-information/" },
+    { "number": "06", "title": "Archive", "text": "Guidebooks from past schools, spanning 1993 through 2026.", "url": "/en/archive/" }
+  ],
+  "sl": [
+    { "number": "01", "title": "O šoli", "text": "Namen, tradicija in terenska zasnova MKŠ Klasični kras.", "url": "/nameni-in-cilji/" },
+    { "number": "02", "title": "Program", "text": "Predavanja, plakati, terenske ekskurzije in družabni dogodki skozi teden šole.", "url": "/okviren-program/" },
+    { "number": "03", "title": "Prizorišča", "text": "Inštitut za raziskovanje krasa in Kulturni dom Postojna.", "url": "/lokacija-dogodka/" },
+    { "number": "04", "title": "Načrtujte bivanje", "text": "Hoteli, zasebne sobe in kampi v Postojni ter okolici.", "url": "/moznosti-nastanitve/" },
+    { "number": "05", "title": "Praktične informacije", "text": "Termin, kotizacija ter navodila za povzetke in predstavitve.", "url": "/tehnicne-informacije/" },
+    { "number": "06", "title": "Arhiv", "text": "Vodniki preteklih šol iz obdobja od 1993 do 2026.", "url": "/arhiv/" }
+  ]
+}

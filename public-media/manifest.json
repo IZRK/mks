@@ -2,23 +2,23 @@
   "files": [
     {
       "path": "wp-content/uploads/2019/12/IKS-01-Guide-book-1993-2.pdf",
-      "bytes": 5131662,
-      "sha256": "72a458d9731ba96852cdc9da742d857960111e6a71bf9158e987ff0a5f192b15"
+      "bytes": 2572930,
+      "sha256": "e2145ff00a6f8c8a9c49a0a01da6f0f1b30692e10bd116ffde858eb68baf7627"
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-02-Guide-book-1994-2.pdf",
-      "bytes": 6513432,
-      "sha256": "63ba9127ae7865f2a3f0fbca6f11215329b9e5925255ddf8e4bb9d7bf9bf1abe"
+      "bytes": 4699988,
+      "sha256": "e501e5ccbf54226dd6d1e64152c3f88a00dd1d76d4fd776dbf9b76c9fd09c786"
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-03-Guide-book-and-Abstracts-1995-2.pdf",
-      "bytes": 3792399,
-      "sha256": "e8871e912e7486758ca0ac54a4eb1249aaf4aa860d7079775cadfdcc8bd994f6"
+      "bytes": 4934941,
+      "sha256": "0efc10ba568b31ed971a5cf3b061719f2753da719e1cf39ea752c5d6e3e9c226"
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-04-Guide-book-1996-2.pdf",
-      "bytes": 5446482,
-      "sha256": "a6854e7c8d0d4017d931831be9f1e8c6864e84308dc0c96ca57eb1f3b9e81b4c"
+      "bytes": 1912873,
+      "sha256": "75617bbb665b7ce9b930303b61fe7251c007ab4002167fce542e9e6cce11e056"
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-05-Guide-book-1997-2.pdf",
@@ -27,28 +27,28 @@
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-06-Guide-book-1998-2.pdf",
-      "bytes": 3639714,
-      "sha256": "8fa8835195228e37663f6b3d2a088929f6408341141ad2ea3fb1d924c50ed9ac"
+      "bytes": 4975104,
+      "sha256": "2bd27c2753bd8e1c841674593a7ea5d3201a7f48e4871dbfc5e5d94be76bb3b5"
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-07-Guide-book-1999-2.pdf",
-      "bytes": 5669731,
-      "sha256": "0632b7d0af2623f7f8b6aa429d36445c819dda2219ef2663fc5eadbbe4110cab"
+      "bytes": 3162540,
+      "sha256": "dd37538e916370eb794ce4bf3b8130f065da89d69efacd9265d0c83cf15b5814"
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-08-Guide-book-2000-2.pdf",
-      "bytes": 2326407,
-      "sha256": "f3fb405c2c43cbe9555e437ce683709a2a717a4112b22910bbe48a7c3e87e9a7"
+      "bytes": 3508172,
+      "sha256": "60354e89ac25a2e34fcf3ca92126dff7931ba7947c0f2fe7983409c8fc9de834"
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-09-Guide-book-2001-2.pdf",
-      "bytes": 7682182,
-      "sha256": "a11194be4ebcbe03d3a74b4dbf8419eb8f86bd018f26498fb126b32a3ea9fb58"
+      "bytes": 3720869,
+      "sha256": "7cb0357c5e2b8b85e151cf41089651590063854eebb2f4d3b7a8b984407557bc"
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-10-Guide-book-and-Abstracts-2002-2.pdf",
-      "bytes": 5815336,
-      "sha256": "5dd70e9dc3e6af6b67d8a786d4c228a1d1d104932e44b6900af5dd94931ae318"
+      "bytes": 1855865,
+      "sha256": "5245609cc0b9aa31f596051e4c85ee604e813c6874ee89c37f29f7b1f7b924a4"
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-11-Guide-book-and-Abstracts-2003-2.pdf",
@@ -72,18 +72,18 @@
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-16-Guide-book-2008-2.pdf",
-      "bytes": 6533562,
-      "sha256": "7d34576a806dbe849c5b345045d1df1e9810b4e8d4ce3359631e767c33663e9b"
+      "bytes": 6015544,
+      "sha256": "605c128e72d941b11d10780d96ddff3f8bd98efba31487abfdfdd10d03dc5abf"
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-17-Guide-book-2009-2.pdf",
-      "bytes": 6756839,
-      "sha256": "4ce886d5d6a2b3004b7bf799a3791e6eac24d58e2b2cd54c22433e3a233dcb09"
+      "bytes": 2714789,
+      "sha256": "2f4d6d7c636912a3b9decbb21c3351557a4702aa977a955d9343f4de63224fe2"
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-18-Guide-book-2010-2.pdf",
-      "bytes": 7177444,
-      "sha256": "3e7a7ea12ba8f8b777155713e6c1e801e669ac1964ad6079362b5d3992ea6e7b"
+      "bytes": 958111,
+      "sha256": "a2def5e5f0b4baee40eec4acc15898ee7a5fa3cf8d35ed52e75e066cab597f54"
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-19-Guide-book-2011-2.pdf",
@@ -92,8 +92,8 @@
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-20-Guide-book-2012-2.pdf",
-      "bytes": 6176935,
-      "sha256": "494dd884374efe9a6ff6faa432cd9f59d576b5997feb53a2677d88148c1ee641"
+      "bytes": 2066474,
+      "sha256": "929262064e14c93d5173e38daecd4103af1e15d2c5880e0dc813f0de8aee699b"
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-21-Guide-book-2013-2.pdf",
@@ -102,8 +102,8 @@
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-22-Guide-book-2014-2.pdf",
-      "bytes": 6451410,
-      "sha256": "46aaeff4fd7df99b3df5563081398509fad95ba81d94df1baa285004e5272ddb"
+      "bytes": 1235551,
+      "sha256": "46ca03b7f52ab2c595f79e48dd621997f5e151e1742c19ad5482d320e33cd8d3"
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-23-Guide-book-2015-2.pdf",
@@ -117,8 +117,8 @@
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-25-Guide-book-2017-2.pdf",
-      "bytes": 6012366,
-      "sha256": "237e3c52fb42ea3a1b5ea06f29e4146c3aa119001b903f79f468a2e25d8fec16"
+      "bytes": 5962175,
+      "sha256": "95c81fcb325a3039b0c57f646089527a40aee147405d5990ddd6c0b44189db37"
     },
     {
       "path": "wp-content/uploads/2019/12/IKS-26-Guide-book-2018-2.pdf",
@@ -507,8 +507,8 @@
     },
     {
       "path": "wp-content/uploads/2021/06/03_Knez_Lithomorphogenesis-of-karst-surface-karren-1.pdf",
-      "bytes": 5324873,
-      "sha256": "92e6ecf84c6ad22196ac3f5a79b161d4d06f003e16d5ec7ac258fb9d1fd9e2d0"
+      "bytes": 2032964,
+      "sha256": "110a0aa3f7734d30d61caec9533b2739e57eb11388836eda5e78320fcdd1c607"
     },
     {
       "path": "wp-content/uploads/2021/06/03_Wednesday.pdf",
@@ -577,8 +577,8 @@
     },
     {
       "path": "wp-content/uploads/2021/06/14_Vidic_Morphogenesis-research-as-basis-for-conservation-and-interpretation-of-karst-landscape-in-the-area-of-West-Medvednica-Mt.-Croatia.pdf",
-      "bytes": 2912080,
-      "sha256": "2d167e17d5c35a3ec5cce516ea3aa5cfd6351a03780dd966f84381ca282c6bc0"
+      "bytes": 2692998,
+      "sha256": "949c5ef7513b9a003e6f983fe776ca715251c112e4febb083dfa6a922b950db9"
     },
     {
       "path": "wp-content/uploads/2021/06/15_Vlatkovic_Rockfall-dynamics-in-caves-Velebit-Mt-Croatia.pdf",
@@ -748,8 +748,8 @@
     },
     {
       "path": "wp-content/uploads/2023/07/IKS-30-Guide-book-2023.pdf",
-      "bytes": 6424910,
-      "sha256": "f3c978b5807470e422ff12f14a2f9c80de5d9cc4192dffa696d7950d0f477011"
+      "bytes": 6071501,
+      "sha256": "1ffd8250a49dfc03e5c7a1ab7f86d1db8a0815ad4099507a8ae764a316cc27bb"
     },
     {
       "path": "wp-content/uploads/2024/08/VODNIK-MKS-31-2024_final-1.pdf",
@@ -778,8 +778,8 @@
     },
     {
       "path": "wp-content/uploads/2026/07/33-MKS_GuideBook.pdf",
-      "bytes": 7682636,
-      "sha256": "ef78fda7ad432eb46a2322668ddb8258b7efd90062aa59740e095c1fc7827285"
+      "bytes": 2547448,
+      "sha256": "ffeb1a6162b433990f5ef21103afbc66bfb406846abcd9029b8ddaf51233c5dc"
     }
   ]
 }

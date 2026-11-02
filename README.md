@@ -22,9 +22,11 @@ and checksum-verifies the established public page and media paths.
 
 ## GitHub Pages
 
-The workflow in `.github/workflows/deploy-pages.yml` builds, validates, uploads and deploys `_site`. It uses the base path returned by GitHub's Pages configuration action, so it works for project sites as well as custom domains.
+The workflow in `.github/workflows/deploy-pages.yml` builds, validates, uploads and deploys `_site` to **https://iks.zrc-sazu.si/**. Production builds explicitly use `PATH_PREFIX=/` and `SITE_URL=https://iks.zrc-sazu.si` so assets, navigation, canonical URLs and the sitemap use the custom domain rather than the old `/mks/` project path. `src/CNAME` is copied to the build output to record the custom domain.
 
 Before the first deployment, open **Settings → Pages** in the GitHub repository and set **Source** to **GitHub Actions**.
+
+After changing the custom domain in **Settings → Pages**, rerun the deployment workflow: changing the domain alone does not rebuild previously generated URLs. Keep the workflow's `SITE_URL` and `src/CNAME` in sync with the domain setting.
 
 ## Structure
 

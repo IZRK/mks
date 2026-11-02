@@ -75,6 +75,12 @@ for (const file of htmlFiles) {
     }
   }
 
+  for (const element of $('script[src], link[rel="stylesheet"][href], link[rel="icon"][href], link[rel="preload"][href]').toArray()) {
+    const resource = $(element).attr("src") || $(element).attr("href");
+    if (!resource?.startsWith("/") || resource.startsWith("//")) continue;
+    if (!await exists(outputTarget(resource))) errors.push(`${relativeFile}: missing resource ${resource}`);
+  }
+
   for (const element of $("a[href]").toArray()) {
     const href = $(element).attr("href");
     if (!href?.startsWith("/") || href.startsWith("//")) continue;
@@ -107,4 +113,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-process.stdout.write(`Validated ${htmlFiles.length} HTML pages (${languageCounts.sl} sl, ${languageCounts.en} en); root-relative links and local images resolve.\n`);
+process.stdout.write(`Validated ${htmlFiles.length} HTML pages (${languageCounts.sl} sl, ${languageCounts.en} en); root-relative links, images, stylesheets and scripts resolve.\n`);

@@ -427,7 +427,7 @@
   .partner-grid { margin-top: 30px; display: grid; grid-template-columns: 1.7fr repeat(6, 1fr) 2fr; gap: 12px; }
   .partner-grid img { width: 100%; height: 80px; padding: 13px; object-fit: contain; background: var(--paper-light); filter: grayscale(1); opacity: .72; transition: filter .2s ease, opacity .2s ease; }
   .partner-grid img:hover { filter: none; opacity: 1; }
-  .footer-base { width: min(100% - 40px, 1180px); margin-inline: auto; padding: 22px 0 28px; display: flex; justify-content: space-between; gap: 30px; border-top: 1px solid var(--line-light); color: rgba(255, 255, 255, .62); font-size: .62rem; }
+  .footer-base { width: min(100% - 40px, 1180px); margin-inline: auto; padding: 22px 0 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; border-top: 1px solid var(--line-light); color: rgba(255, 255, 255, .62); font-size: .62rem; }
 }
 
 @layer content {
